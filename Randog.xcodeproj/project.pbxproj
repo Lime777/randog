@@ -13,6 +13,8 @@
 		07857CCB25A63C5700AAC249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07857CC925A63C5700AAC249 /* Main.storyboard */; };
 		07857CCD25A63C5700AAC249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07857CCC25A63C5700AAC249 /* Assets.xcassets */; };
 		07857CD025A63C5700AAC249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07857CCE25A63C5700AAC249 /* LaunchScreen.storyboard */; };
+		07857CDD25A6436600AAC249 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07857CDC25A6436600AAC249 /* DogAPI.swift */; };
+		07857CE025A65D1700AAC249 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07857CDF25A65D1700AAC249 /* DogImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		07857CCC25A63C5700AAC249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07857CCF25A63C5700AAC249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07857CD125A63C5700AAC249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07857CDC25A6436600AAC249 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		07857CDF25A65D1700AAC249 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		07B17E8125B7810600B2DCEC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 		07857CB725A63C5700AAC249 = {
 			isa = PBXGroup;
 			children = (
+				07B17E8125B7810600B2DCEC /* MyPlayground.playground */,
 				07857CC225A63C5700AAC249 /* Randog */,
 				07857CC125A63C5700AAC249 /* Products */,
 			);
@@ -56,15 +62,41 @@
 		07857CC225A63C5700AAC249 /* Randog */ = {
 			isa = PBXGroup;
 			children = (
-				07857CC325A63C5700AAC249 /* AppDelegate.swift */,
-				07857CC525A63C5700AAC249 /* SceneDelegate.swift */,
-				07857CC725A63C5700AAC249 /* ViewController.swift */,
-				07857CC925A63C5700AAC249 /* Main.storyboard */,
-				07857CCC25A63C5700AAC249 /* Assets.xcassets */,
-				07857CCE25A63C5700AAC249 /* LaunchScreen.storyboard */,
+				07857CDB25A63E3F00AAC249 /* Model */,
+				07857CD925A63C9500AAC249 /* Controller */,
+				07857CD825A63C8B00AAC249 /* View */,
 				07857CD125A63C5700AAC249 /* Info.plist */,
 			);
 			path = Randog;
+			sourceTree = "<group>";
+		};
+		07857CD825A63C8B00AAC249 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07857CC925A63C5700AAC249 /* Main.storyboard */,
+				07857CCC25A63C5700AAC249 /* Assets.xcassets */,
+				07857CCE25A63C5700AAC249 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07857CD925A63C9500AAC249 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				07857CC325A63C5700AAC249 /* AppDelegate.swift */,
+				07857CC525A63C5700AAC249 /* SceneDelegate.swift */,
+				07857CC725A63C5700AAC249 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		07857CDB25A63E3F00AAC249 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07857CDC25A6436600AAC249 /* DogAPI.swift */,
+				07857CDF25A65D1700AAC249 /* DogImage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07857CC825A63C5700AAC249 /* ViewController.swift in Sources */,
+				07857CE025A65D1700AAC249 /* DogImage.swift in Sources */,
 				07857CC425A63C5700AAC249 /* AppDelegate.swift in Sources */,
 				07857CC625A63C5700AAC249 /* SceneDelegate.swift in Sources */,
+				07857CDD25A6436600AAC249 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
